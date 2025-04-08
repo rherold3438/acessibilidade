@@ -3,6 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -123,7 +126,7 @@ h2 {
     background-color: #ffffff;
     padding: 2rem;
     /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
+    border-radi>us: 10px;
     /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave para destacar o formulário */
@@ -163,5 +166,25 @@ h2 {
  .apresenta-lista{
     display: none;
  }
+ .alto-contraste .nav-link{
+ color: var(--alto-contraste-link);
+ }
+
+ .alto-contraste .botao-inicio,
+ .alto-contraste .formulario button,
+ .alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+ }
+
+ .alto-contraste #tropicalia {
+    background: none;
+ }
+
+ .alto-contraste #galeria{
+    background-color: var(--alto-contraste-fundo);
+ }
  
- 
+ .alto-contraste .fundo-galeria{
+    background: none;
+ }
